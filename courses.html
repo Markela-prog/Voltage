@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Music Band Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Logo, band name, and navigation menu in the header -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="Voltage Band Logo" class="img-fluid">
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="music.html">Music</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="members.html">Members</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="courses.html">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="game.html">Game</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="settings">Settings</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="switch">
+                                <input type="checkbox" id="checkbox" />
+                                <label for="checkbox"></label>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <button id="increase-font">+</button>
+                        </li>
+                        <li class="nav-item">
+                            <button id="decrease-font">-</button>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-12 d-flex flex-column custompad">
+                            <h2>Music Courses</h2>
+                            <p>Welcome to our selection of music courses. Whether you're just starting or looking to
+                                improve
+                                your
+                                skills, we have the perfect courses for you.</p>
+                            <p>Choose from a variety of vocal and instrument courses to enhance your musical abilities.
+                            </p>
+                            <br>
+                        
+                        
+                            <h2>Course Benefits:</h2>
+                            <ul id="benefits-list">
+                                <li><span class="benefits">Skill Enhancement:</span> Our courses are designed to enhance
+                                    your
+                                    musical skills, whether you're learning a
+                                    new instrument, improving your vocals, or mastering songwriting techniques.</li>
+                                <li><span class="benefits">Personalized Feedback:</span> You'll receive constructive
+                                    feedback
+                                    from experienced instructors, helping you
+                                    identify areas for improvement and growth.</li>
+                                <li><span class="benefits">Career Opportunities:</span> By honing your musical talents
+                                    and
+                                    earning certificates, you'll be better equipped
+                                    for a career in the music industry or as a performer.</li>
+                                <li><span class="benefits">Creative Expression:</span> Our courses encourage creative
+                                    expression, allowing you to compose your music,
+                                    perform with confidence, and explore your unique musical style.</li>
+                                <li><span class="benefits">Community and Networking:</span> Join a community of fellow
+                                    musicians
+                                    and music enthusiasts, providing
+                                    opportunities to collaborate, share experiences, and build a network within the
+                                    music
+                                    industry.</li>
+                                <li><span class="benefits">Flexibility:</span> With self-paced courses and online
+                                    access,
+                                    you
+                                    can learn at your own pace, fitting your
+                                    music education around your schedule.</li>
+                                <li><span class="benefits">Access to Resources:</span> Gain access to a wealth of
+                                    resources,
+                                    including sheet music, practice exercises,
+                                    and reference materials to support your learning journey.</li>
+                                <li><span class="benefits">Live Sessions:</span> Attend live webinars and sessions with
+                                    industry
+                                    experts, offering real-time interaction
+                                    and insights.</li>
+                                <li><span class="benefits">Exclusive Offers:</span> As a student, you'll receive
+                                    exclusive
+                                    offers, early access to events, and discounts
+                                    on future courses and events.</li>
+                                <li><span class="benefits">Confidence and Stage Presence:</span> Improve your confidence
+                                    and
+                                    stage presence, which are valuable skills for
+                                    any musician or performer.</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-6 d-flex flex-column custompad">
+                            <div class="table-container">
+                                <h2>Vocal Courses</h2>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Course Name</th>
+                                            <th>Description</th>
+                                            <th>Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Beginner Vocal Training</td>
+                                            <td>Learn the basics of vocal techniques. Suitable for beginners.</td>
+                                            <td>$99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Intermediate Voice Coaching</td>
+                                            <td>Advance your vocal skills with personalized coaching.</td>
+                                            <td>$129</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Advanced Vocal Performance</td>
+                                            <td>Take your vocal performance to the next level.</td>
+                                            <td>$149</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="col-lg-6 d-flex flex-column custompad">
+                            <div class="table-container">
+                                <h2>Instrument Courses</h2>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Course Name</th>
+                                            <th>Description</th>
+                                            <th>Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Beginner Guitar Lessons</td>
+                                            <td>Learn to play the guitar from scratch.</td>
+                                            <td>$109</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Advanced Drumming Techniques</td>
+                                            <td>Master the art of drumming with advanced techniques.</td>
+                                            <td>$139</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Piano and Keyboard Mastery</td>
+                                            <td>Unlock your potential with piano and keyboard playing.</td>
+                                            <td>$119</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <aside class="col-lg-4 sidebar">
+                    <h2>Celebrities Who Studied with Us</h2>
+                    <ul>
+                        <li>Taylor Swift - Songwriting Masterclass</li>
+                        <li>John Legend - Piano Fundamentals</li>
+                        <li>Beyoncé - Vocal Performance Workshop</li>
+                        <li>Ed Sheeran - Guitar Techniques</li>
+                        <li>Adele - Songwriting Breakthrough</li>
+                        <li>Bruno Mars - Stage Presence and Showmanship</li>
+                    </ul>
+                    <p>These celebrities have honed their skills with our courses. Join them in your journey to musical
+                        excellence!</p>
+                    <br>
+                    <h2>Frequently Asked Questions (FAQ):</h2>
+                    <ul>
+                        <li class="FAQ-questions">Do I need any prior musical experience to enroll in your courses?
+                            <p class="answer">No, our courses are designed for students of all levels, from beginners to
+                                experienced musicians. We
+                                offer a variety of courses to cater to different skill levels.</p>
+                        </li>
+                        <li class="FAQ-questions">What is the duration of the courses?
+                            <p class="answer">The course duration varies depending on the specific course. Most of our
+                                courses
+                                are designed to be
+                                completed within a few weeks, but some advanced courses may take longer.</p>
+                        </li>
+                        <li class="FAQ-questions">Are the courses self-paced, or do they have set schedules?
+                            <p class="answer">Our courses are flexible and self-paced. You can start and finish them at
+                                your
+                                own
+                                convenience.
+                                However, we also offer live sessions and webinars for interactive learning.</p>
+                        </li>
+                        <li class="FAQ-questions">What materials or instruments do I need for the courses?
+                            <p class="answer">The required materials vary by course. You'll receive a list of
+                                requirements
+                                when
+                                you enroll. For
+                                instrument courses, you'll need access to the specified instrument.</p>
+                        </li>
+                        <li class="FAQ-questions">Are there any assessments or exams in the courses?
+                            <p class="answer">Yes, some courses include quizzes, assignments, or practical assessments
+                                to
+                                help
+                                you gauge your
+                                progress and understanding.</p>
+                        </li>
+                        <li class="FAQ-questions">Is there a refund policy if I'm not satisfied with the course?
+                            <p class="answer">We offer a satisfaction guarantee. If you're not completely satisfied with
+                                your
+                                course within the
+                                first week, you can request a full refund.</p>
+                        </li>
+                        <li class="FAQ-questions">Do I receive a certificate upon course completion?
+                            <p class="answer">Yes, you'll receive a certificate of completion for each course you
+                                successfully
+                                finish. These
+                                certificates can be a valuable addition to your portfolio.</p>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class="footer-nav">
+            <div class="container-fluid" id="footer">
+                <address>
+                    Email: <a href="mailto:info@voltage.com" class="link">info@Voltage.com</a><br>
+                    Phone: +370 697 22613
+                </address>
+                <p>© 2023 Voltage. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/validation.js"></script>
+    <script src="js/settings.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

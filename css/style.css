@@ -1,0 +1,705 @@
+/* Color Variables */
+:root {
+    --primary-color: #1a1a1a;
+    /* Define a primary background color */
+    --secondary-color: #fff;
+    /* Define a secondary (text) color */
+    --accent-color: #FF6600;
+    /* Define an accent color */
+    --accent-shade: #FF3300;
+    /* Define a darker shade of the accent color */
+    --additional-color: #f5f5dc;
+}
+
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    box-sizing: border-box;
+    /* Use the border-box model for box sizing */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: var(--accent-color);
+}
+
+p {
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
+main {
+    font-family: inherit;
+    background-color: inherit;
+    color: inherit;
+    display: flex;
+}
+
+/* GALLERY */
+
+.gallery .img-container {
+    position: relative;
+    width: 100%;
+    padding-top: 80%;
+    /* Maintain a 4:5 aspect ratio (height = width * 0.8) */
+    overflow: hidden;
+}
+
+#gallery-heading {
+    padding: 1rem;
+    margin: 15px;
+    text-align: center;
+}
+
+
+.gallery .img-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--accent-color);
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* HEADER */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 15px 0;
+}
+
+
+#navbarNav>ul>li:nth-child(1)>a {
+    color: var(--accent-color);
+}
+
+#navbarNav>ul>li:nth-child(1)>a:hover {
+    color: var(--accent-shade);
+}
+
+.img-fluid {
+    height: 125px;
+    width: auto;
+}
+
+header h1 {
+    color: var(--accent-color);
+    font-size: 24px;
+}
+
+nav .navbar {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.custompad {
+    padding: 1.5rem;
+}
+
+.nav-link {
+    color: var(--accent-color);
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav-link:hover {
+    color: var(--accent-shade);
+}
+
+.nav-items {
+    margin-right: 20px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    /* Remove underlines from navigation links */
+    color: var(--accent-color);
+    font-size: 18px;
+}
+
+.custom-toggler {
+    background-color: var(--accent-color);
+    
+}
+
+.btn.btn-primary {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border-color: var(--accent-color);
+}
+
+/* Change hover or focus styles */
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+    background-color: var(--accent-shade);
+    color: var(--secondary-color);
+    border-color: var(--accent-shade);
+}
+
+
+.btn.btn-primary:active {
+    background-color: var(--accent-shade);
+    color: var(--secondary-color);
+    border-color: var(--accent-shade);
+
+}
+
+/* POLL */
+
+.poll-form {
+    margin-bottom: 10px;
+}
+
+.vote-button {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.vote-button:hover {
+    background-color: var(--accent-shade);
+}
+
+.poll-results {
+    display: none;
+    margin-top: 10px;
+}
+
+#poll-results-2 {
+    display: block;
+    margin-top: 10px;
+}
+
+.result {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.option {
+    font-weight: bold;
+}
+
+.count {
+    color: var(--accent-color);
+}
+
+.input-field,
+.submit {
+    width: 80%;
+    max-width: 80%;
+}
+
+/* MEMBERS */
+
+.bordered {
+    padding: 10px;
+    border: 2px solid var(--accent-color);
+    border-radius: 5px;
+}
+
+.member-card {  
+    justify-content: center;
+    border: 1px solid var(--accent-color);
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+
+.member-img {
+    width: fit-content;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.member p {
+    font-size: inherit;
+    margin-bottom: 20px;
+}
+
+#subscribe {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Support/Donate Button */
+#support {
+    display: block;
+    text-align: center;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#support:hover {
+    color: var(--secondary-color);
+    background-color: var(--accent-shade);
+}
+
+
+
+/* Newsletter Signup Form */
+.sidebar {
+    border-left: 1px solid var(--accent-color);
+    padding: 1.5rem;
+}
+
+.sidebar form {
+    margin-top: 20px;
+}
+
+.sidebar input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+}
+
+.sidebar button[type="submit"] {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar button[type="submit"]:hover {
+    background-color: var(--accent-shade);
+}
+
+/* Fan Testimonials */
+.testimonial {
+    margin-top: 20px;
+    border-left: 2px solid var(--accent-color);
+    padding-left: 20px;
+}
+
+.testimonial blockquote {
+    font-style: italic;
+}
+
+.testimonial-author {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+/* FORM */
+
+form {
+    display: flex;
+    /* Use a flex layout for the form */
+    flex-direction: column;
+    /* Arrange form elements in a column */
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    margin-bottom: 10px;
+}
+
+/* COURSES */
+
+.table-container {
+    overflow: auto;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+thead th {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}
+
+.FAQ-questions {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.answer {
+    color: var(--secondary-color);
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid var(--accent-color);
+    border-radius: 5px;
+}
+
+#benefits-list li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.benefits {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* MUSIC */
+.music-review {
+    border: 1px solid var(--accent-color);
+    background-color: var(--primary-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.music-review h4 {
+    font-size: 20px;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.music-review p {
+    font-size: 16px;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.music-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style: none;
+}
+
+.music-list li {
+    width: 50%;
+    /* Two items per row for larger screens */
+    flex-basis: 50%;
+    /* Set the basis for flex layout */
+    box-sizing: border-box;
+    /* Include padding and borders in the width */
+    padding: 5px;
+}
+
+.centered-h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.music-list {
+    text-align: center;
+}
+
+.featured-videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 aspect ratio (height = width * 0.5625) */
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 1px solid var(--secondary-color);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* scheme */
+
+.scheme {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    margin: 20px;
+    border: 2px solid var(--accent-color);
+    padding: 10px;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+}
+
+.container>* {
+    margin: 5px;
+}
+
+
+/* Links Styles */
+.link {
+    color: var(--accent-color);
+    text-decoration: none;
+    /* Remove link underlines */
+    font-size: inherit;
+    /* Inherit font size from the parent container */
+}
+
+/* Hover Styles for Links */
+.link:hover {
+    color: var(--accent-shade);
+    text-decoration: underline;
+}
+
+.scheme-container {
+    background-color: var(--primary-color);
+    margin: 20px;
+    padding: 10px;
+}
+
+.footer-nav {
+    background-color: var(--primary-color);
+    padding: 15px 0px 15px 0px;
+}
+
+#footer {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    clear: right;
+    position: relative;
+    z-index: 2;
+}
+
+#footer p {
+    color: var(--accent-color);
+}
+
+#footer a {
+    color: var(--accent-color);
+}
+
+#footer address {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+#settings {
+    color: var(--accent-color);
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#settings:hover {
+    color: var(--accent-shade);
+}
+
+button {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+.container-fluid,
+.custompad,
+.sidebar {
+    background-color: var(--primary-color);
+
+}
+
+button:hover {
+    background-color: var(--accent-shade);
+}
+
+h1 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.switch {
+    position: relative;
+    width: 60px;
+    height: 30px;
+
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--accent-color);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.switch label:before {
+    content: "";
+    position: absolute;
+    left: 3px;
+    bottom: 3px;
+    height: 24px;
+    width: 24px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+
+input:checked+label {
+    background-color: var(--accent-shade);
+}
+
+input:checked+label:before {
+    transform: translateX(30px);
+    background-color: var(--primary-color);
+}
+
+/* Light Mode Styles */
+.light-mode {
+    background-color: #1a1a1a;
+}
+
+#footer{
+    background-color: #1a1a1a;
+}
+
+.light-mode h1 {
+    color: #fff;
+}
+
+.light-mode .switch label {
+    background-color: #FF6600;
+}
+
+.light-mode .switch label:before {
+    background-color: #1a1a1a;
+}
+
+.light-mode input:checked+label {
+    background-color: #FF3300;
+}
+
+.light-mode input:checked+label:before {
+    background-color: #1a1a1a;
+}
+
+body.light-mode {
+    --primary-color: #fff;
+    --secondary-color: #1a1a1a;
+}
+
+body.light-mode .container-fluid,
+body.light-mode .custompad,
+body.light-mode .sidebar,
+body.light-mode footer#container-fluid
+body.light-mode .gameboard {
+    --primary-color: #f5f5dc;
+    --secondary-color: #1a1a1a;
+    --additional-color: #1a1a1a;
+}
+
+body.light-mode .sidebar{
+    border-left: 1px solid #1a1a1a;
+}
+
+body.light-mode .footer-nav {
+    --primary-color: #fff;
+    --secondary-color: #1a1a1a;
+}
+
+button#increase-font,
+button#decrease-font {
+    width: 30px !important;
+    height: 30px !important;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+

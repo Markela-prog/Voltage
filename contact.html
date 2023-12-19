@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Music Band Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Logo, band name, and navigation menu in the header -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="Voltage Band Logo" class="img-fluid">
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="music.html">Music</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="members.html">Members</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="courses.html">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="game.html">Game</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="settings">Settings</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="switch">
+                                <input type="checkbox" id="checkbox" />
+                                <label for="checkbox"></label>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <button id="increase-font">+</button>
+                        </li>
+                        <li class="nav-item">
+                            <button id="decrease-font">-</button>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-4 custompad">
+                    <h2>Contact Us</h2>
+                    <p>If you have any questions or inquiries, feel free to contact us.</p>
+                    <address>
+                        Email: <a href="mailto:info@voltage.com" class="link">info@Voltage.com</a><br>
+                        Phone: +370 697 22613
+                    </address>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8 custompad">
+                    <h2>Contact Form</h2>
+                    <form action="" id="contactform">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message:</label>
+                            <textarea id="message" class="form-control" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+                <aside class="col-lg-4 sidebar">
+                    <h2>Newsletter</h2>
+                    <p>Subscribe to our newsletter for updates:</p>
+                    <form action="" id="subscribeform">
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <button type="submit" id="subscribe">Subscribe</button>
+                    </form>
+
+                    <h2>Support Us</h2>
+                    <p>If you enjoy our music, consider supporting us:</p>
+                    <a href="support.html" id="support">Donate</a>
+
+                    <h2>Fan Testimonials</h2>
+                    <div class="testimonial">
+                        <blockquote>
+                            "I've been a fan for years, and Voltage Band never disappoints. Their music is a
+                            masterpiece!"
+                        </blockquote>
+                        <p class="testimonial-author">- Sarah Johnson</p>
+                    </div>
+                    <div class="testimonial">
+                        <blockquote>
+                            "Voltage Band's concerts are electrifying! I can't get enough of their live performances."
+                        </blockquote>
+                        <p class="testimonial-author">- Michael Brown</p>
+                    </div>
+
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-nav">
+            <div class="container-fluid" id="footer">
+                <address>
+                    Email: <a href="mailto:info@voltage.com" class="link">info@Voltage.com</a><br>
+                    Phone: +370 697 22613
+                </address>
+                <p>© 2023 Voltage. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/validation.js"></script>
+    <script src="js/settings.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

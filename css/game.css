@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: block;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dealer-cards img {
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+}
+
+#results{
+    color: #1a1a1a;
+}
+
+.gameboard {
+    background-color: var(--additional-color);
+    width: 80%;
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid var(--accent-color);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card-animation {
+    transition: all 0.5s ease;
+    transform: scale(0);
+}
+
+.card-animation-added {
+    transform: scale(1);
+}
+
+#your-cards img {
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+}
+
+.rules ul {
+    list-style-position: inside;
+}
+
+#hit {
+    height: 75px;
+    width: 150px;
+    font-size: 20px;
+}
+
+#stay {
+    height: 75px;
+    width: 150px;
+    font-size: 20px;
+}
+
+button#hit:disabled,
+button#stay:disabled,
+button#play-again:disabled {
+    background-color: #cccccc;
+    color: #ffffff;
+    cursor: not-allowed;
+}
+
+
+#play-again {
+    height: 75px;
+    width: 150px;
+    font-size: 20px;
+}
